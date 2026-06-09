@@ -1,0 +1,297 @@
+<!doctype html>
+<html lang="sl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="ReachMe helps people connect with your trusted contacts through a simple QR code. Ideal for travel, family members, bags, keys and everyday carry."
+    />
+    <title>ReachMe — Stay Connected When It Matters Most</title>
+    <link rel="icon" type="image/png" href="Images/favicon_v2.png" />
+    <link rel="apple-touch-icon" href="Images/favicon_v2.png" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <div class="wrap">
+      <nav class="nav">
+        <div class="brand">
+          <img src="Images/logo.png" alt="ReLink Labs logo" />
+          <span>ReLink Labs</span>
+        </div>
+
+        <div class="lang">
+          <button id="btn-sl" class="active" onclick="setLanguage('sl')">
+            SL
+          </button>
+          <span style="color: #444">|</span>
+          <button id="btn-en" onclick="setLanguage('en')">EN</button>
+        </div>
+      </nav>
+
+      <section class="hero">
+        <div>
+          <span class="eyebrow" data-i18n="hero_eyebrow"
+            >Predstavljamo ReachMe</span
+          >
+
+          <h1 data-i18n="hero_title">Ostanite povezani kjerkoli.</h1>
+
+          <p data-i18n="hero_text">
+            Preprost način, da drugi stopijo v stik z ljudmi, ki jim zaupate.
+          </p>
+
+          <a class="button" href="#waitlist" data-i18n="hero_cta"
+            >Pridruži se waitlisti</a
+          >
+          <a
+            class="button secondary"
+            href="#products"
+            data-i18n="hero_secondary"
+            >Poglej produkte</a
+          >
+        </div>
+
+        <div class="hero-image">
+          <img src="Images/reachme-backpack.png" alt="ReachMe Keychain" />
+        </div>
+      </section>
+
+      <section class="section">
+        <h2 data-i18n="not_tracker_title">
+          Ni tracker. Je pot nazaj do tvojih ljudi.
+        </h2>
+
+        <p data-i18n="not_tracker_text">
+          ReachMe pomaga ljudem hitro stopiti v stik z vašimi izbranimi kontakti, ko je to najbolj pomembno.
+        </p>
+
+        <div class="grid">
+          <div class="card">
+            <h3 data-i18n="step1_title">Skeniraj QR</h3>
+            <p data-i18n="step1_text">
+              Nekdo skenira ReachMe QR in odpre tvoj aktivni profil.
+            </p>
+          </div>
+
+          <div class="card">
+            <h3 data-i18n="step2_title">Kontaktiraj osebe</h3>
+            <p data-i18n="step2_text">
+              Hitro lahko kontaktirajo tvoje izbrane kontakte.
+            </p>
+          </div>
+
+          <div class="card">
+            <h3 data-i18n="step3_title">Ti imaš nadzor</h3>
+            <p data-i18n="step3_text">
+              QR ostane isti. Aktivni profil lahko kadarkoli zamenjaš.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="section how-visual" id="how-it-works">
+        <div class="how-header">
+        <h2 data-i18n="scan_title">Kako deluje ReachMe</h2>
+        <p data-i18n="scan_intro">Ko nekdo skenira ReachMe, takoj vidi zaupanja vredne kontakte, ki jih izbereš za deljenje.</p>
+        </div>
+        
+        <div class="how-cards">
+        <div class="how-card">
+        <img src="Images/reachme-scan.png" alt="Scan ReachMe">
+        <h3 data-i18n="scan_card_title">Skeniraj ReachMe</h3>
+        <p data-i18n="scan_card_text">Skeniraj QR na svojem ReachMe izdelku.</p>
+        </div>
+        
+        <div class="how-card">
+        <img src="Images/reachme-profile.png" alt="ReachMe profile mockup">
+        <h3 data-i18n="profile_card_title">Odpri profil</h3>
+        <p data-i18n="profile_card_text">Po skenu se odpre izbran ReachMe profil.</p>
+        </div>
+        
+        <div class="how-card">
+        <img src="Images/reachme-contacts.png" alt="ReachMe contact mockup">
+        <h3 data-i18n="contact_card_title">Kontaktiraj osebo</h3>
+        <p data-i18n="contact_card_text">Pokliči ali pošlji sporočilo izbranemu kontaktu.</p>
+        </div>
+        </div>
+        
+        <div class="how-benefits">
+        <span data-i18n="benefit1">Brez aplikacije</span><span>•</span><span data-i18n="benefit2">Ti imaš nadzor</span><span>•</span><span data-i18n="benefit3">Takojšnja povezava</span>
+        </div>
+        </section>
+
+      <section class="section" id="products">
+        <h2 data-i18n="products_title">ReachMe produkti</h2>
+
+        <p data-i18n="products_text">Izberi obliko, ki najbolje ustreza tvojemu načinu uporabe.</p>
+
+        <div class="products">
+          <div class="product">
+            <div>
+              <h3>ReachMe Clip</h3>
+              <p data-i18n="clip_text">
+                Premium money-clip stil za vsakdanjo uporabo.
+              </p>
+            </div>
+            <img
+              class="product-image"
+              src="Images/reachme-clip.png"
+              alt="ReachMe Clip render"
+            />
+          </div>
+
+          <div class="product">
+            <div>
+              <h3>ReachMe Keychain</h3>
+              <p data-i18n="keychain_text">
+                Za ključe, torbe, backpacke in potovanja.
+              </p>
+            </div>
+            <img
+              class="product-image"
+              src="Images/reachme-keychain.png"
+              alt="ReachMe Keychain render"
+            />
+          </div>
+
+          <div class="product">
+            <div>
+              <h3>ReachMe Band</h3>
+              <p data-i18n="band_text">
+                Wearable verzija za dogodke in skupine.
+              </p>
+            </div>
+            <!-- <div class="coming-soon-card" data-i18n="band_coming_soon">
+              Coming Soon
+            </div> -->
+            <img
+              class="product-image"
+              src="Images/reachme-band.png"
+              alt="ReachMe Band Coming Soon render"
+            />
+          </div>
+        </div>
+      </section>
+
+      <section class="final" id="waitlist">
+        <h2 data-i18n="waitlist_title">Pridruži se ReachMe waitlisti</h2>
+
+        <p data-i18n="waitlist_intro">
+          Pomagaj oblikovati ReachMe in bodi med prvimi, ki izvejo za
+          lansiranje.
+        </p>
+
+        <form
+          action="https://formspree.io/f/xrevplzd"
+          method="POST"
+          class="waitlist-form"
+        >
+          <div class="form-group">
+            <label for="email" data-i18n="form_email_label"
+              >Email naslov *</label
+            >
+            <input
+              type="email"
+              id="email"
+              name="email"
+              data-i18n-placeholder="form_email_placeholder"
+              placeholder="tvoj@email.com"
+              required
+            />
+          </div>
+
+          <div class="form-group">
+            <label for="use_case" data-i18n="form_usecase_label"
+              >Za kaj bi primarno uporabljal/a ReachMe?</label
+            >
+            <select id="use_case" name="use_case" required>
+              <option value="" data-i18n="form_select_option">
+                Izberi možnost
+              </option>
+              <option value="Travel & luggage" data-i18n="use_travel">
+                Potovanja in prtljaga
+              </option>
+              <option value="Backpacks & bags" data-i18n="use_bags">
+                Backpacki in torbe
+              </option>
+              <option value="Children" data-i18n="use_children">Otroci</option>
+              <option value="Elderly family members" data-i18n="use_elderly">
+                Starejši družinski člani
+              </option>
+              <option value="Keys" data-i18n="use_keys">Ključi</option>
+              <option value="Pets" data-i18n="use_pets">
+                Hišni ljubljenčki
+              </option>
+              <option value="Events & festivals" data-i18n="use_events">
+                Dogodki in festivali
+              </option>
+              <option value="Other" data-i18n="use_other">Drugo</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="product_interest" data-i18n="form_product_label"
+              >Kateri produkt te najbolj zanima?</label
+            >
+            <select id="product_interest" name="product_interest" required>
+              <option value="" data-i18n="form_select_option_2">
+                Izberi možnost
+              </option>
+              <option value="ReachMe Clip">ReachMe Clip</option>
+              <option value="ReachMe Keychain">ReachMe Keychain</option>
+              <option value="Both" data-i18n="product_both">Oba</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="first_attachment" data-i18n="form_attachment_label"
+              >Kam bi ReachMe najprej pritrdil/a?</label
+            >
+            <textarea
+              id="first_attachment"
+              name="first_attachment"
+              rows="4"
+              data-i18n-placeholder="form_attachment_placeholder"
+              placeholder="Na kovček, otroški nahrbtnik, očetovo torbo..."
+            ></textarea>
+          </div>
+
+          <input
+            type="hidden"
+            name="_subject"
+            value="New ReachMe waitlist signup"
+          />
+          <input type="hidden" name="source" value="relinklabs.io" />
+
+          <button
+            type="submit"
+            class="waitlist-button"
+            data-i18n="waitlist_button"
+          >
+            Pridruži se waitlisti
+          </button>
+
+          <p class="waitlist-note" data-i18n="waitlist_note">
+            Zgodnji člani bodo pomagali oblikovati prihodnost ReachMe.
+          </p>
+        </form>
+
+        <p
+          id="render-disclaimer"
+          class="render-disclaimer"
+          data-i18n="render_disclaimer"
+        >
+          ReachMe je trenutno v razvoju. Prikazane slike so konceptni renderji
+          in se lahko pred lansiranjem spremenijo.
+        </p>
+      </section>
+
+      <footer>
+        <span>© 2026 ReLink Labs</span>
+        <span>hello@relinklabs.io</span>
+      </footer>
+    </div>
+  </body>
+</html>
