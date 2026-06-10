@@ -54,7 +54,7 @@ const translations = {
     use_events: "Dogodki in festivali",
     use_other: "Drugo",
     form_product_label: "Kateri produkt te najbolj zanima?",
-    product_both: "Oba",
+    product_both: "Vsi",
     form_attachment_label: "Kam bi ReachMe najprej pritrdil/a?",
     form_attachment_placeholder:
       "Na kovček, otroški nahrbtnik, očetovo torbo...",
@@ -118,7 +118,7 @@ const translations = {
     use_events: "Events & festivals",
     use_other: "Other",
     form_product_label: "Which product interests you most?",
-    product_both: "Both",
+    product_both: "All",
     form_attachment_label: "What would you attach ReachMe to first?",
     form_attachment_placeholder:
       "My suitcase, my child’s backpack, my father’s bag...",
