@@ -492,3 +492,25 @@ font-size:15px;
 grid-template-columns:1fr;
 }
 }
+
+/* Match profile setup cards to How ReachMe Works card sizing */
+.how-card{
+  display:flex;
+  flex-direction:column;
+  height:100%;
+  }
+  
+  .how-card img{
+  width:100%;
+  aspect-ratio:1 / 1;
+  object-fit:cover;
+  display:block;
+  }
+  
+  .how-card h3{
+  min-height:54px;
+  }
+  
+  .how-card p{
+  min-height:46px;
+  }

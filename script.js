@@ -12,6 +12,18 @@ const translations = {
     benefit2: "Ti imaš nadzor",
     benefit3: "Takojšnja povezava",
 
+    profile_setup_title: "Ustvari svoj profil",
+    profile_setup_intro: "Ustvari profile, dodaj zaupanja vredne kontakte in izberi, kateri profil je aktiven na tvojem ReachMe izdelku.",
+    create_profile_title: "Ustvari profil",
+    create_profile_text: "Ustvari enega ali več profilov za različne situacije.",
+    add_contacts_title: "Dodaj kontakte",
+    add_contacts_text: "Izberi, katere zaupanja vredne kontakte lahko ljudje pokličejo ali jim pošljejo sporočilo.",
+    select_profile_title: "Izberi aktiven profil",
+    select_profile_text: "Izberi profil, ki je aktiven na tvojem ReachMe izdelku.",
+    setup_benefit1: "Več profilov",
+    setup_benefit2: "Posodobi kadarkoli",
+    setup_benefit3: "Ti imaš nadzor",
+
     hero_eyebrow: "Predstavljamo ReachMe",
     hero_title: "Ostanite povezani kjerkoli.",
     hero_text: "Preprost način, da drugi stopijo v stik z ljudmi, ki jim zaupate.",
@@ -100,6 +112,18 @@ const translations = {
     keychain_placeholder: "Keychain image placeholder",
     band_text: "A wearable version for events and groups.",
     band_placeholder: "Band image placeholder",
+
+    profile_setup_title: "Create Your Profile",
+    profile_setup_intro: "Create profiles, add trusted contacts, and choose which profile is active on your ReachMe product.",
+    create_profile_title: "Create Profile",
+    create_profile_text: "Create one or more profiles for different situations.",
+    add_contacts_title: "Add Trusted Contacts",
+    add_contacts_text: "Choose which trusted contacts people can call or message.",
+    select_profile_title: "Select Active Profile",
+    select_profile_text: "Choose which profile is active on your ReachMe product.",
+    setup_benefit1: "Multiple profiles",
+    setup_benefit2: "Update anytime",
+    setup_benefit3: "You're in control",
 
     waitlist_title: "Join the ReachMe Waitlist",
     waitlist_intro:
