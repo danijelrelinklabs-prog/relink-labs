@@ -1,7 +1,31 @@
 const translations = {
   sl: {
+    hero_eyebrow: "Predstavljamo ReachMe",
+    hero_title: "Ostanite povezani kjerkoli.",
+    hero_text:
+      "ReachMe je fizični profil z zaupanja vrednimi kontakti, ki ga lahko kdorkoli odpre s skeniranjem QR kode. Deluje brez aplikacije in brez baterije — ko nimaš telefona, je prazen, izgubljen ali ukraden.",
+    hero_cta: "Pridruži se waitlisti",
+    hero_secondary: "Poglej produkte",
+
+    comparison_title:
+      "AirTag pomaga najti. ReachMe pomaga vzpostaviti stik.",
+    comparison_intro:
+      "ReachMe ne nadomešča AirTaga ali pametne ure. Je dodatna možnost, ko lokacija sama ni dovolj ali naprava ne deluje.",
+    airtag_title: "Pomaga poiskati predmet",
+    airtag_text:
+      "Lastniku pomaga poiskati predmet, na katerega je pritrjen, in prikazati njegovo približno lokacijo.",
+    smartwatch_kicker: "Pametna ura",
+    smartwatch_title: "Omogoča komunikacijo",
+    smartwatch_text:
+      "Omogoča klice in lahko pomaga z lokacijo, vendar potrebuje napolnjeno baterijo, povezavo in delujočo napravo.",
+    reachme_badge: "Dodatna varnostna plast",
+    reachme_compare_title: "Pomaga vzpostaviti stik",
+    reachme_compare_text:
+      "Oseba, ki nekoga najde, skenira QR in stopi v stik z njegovimi zaupanja vrednimi osebami. ReachMe ne potrebuje aplikacije, baterije ali sledenja.",
+
     scan_title: "Kako deluje ReachMe",
-    scan_intro: "Ko nekdo skenira ReachMe, takoj vidi zaupanja vredne kontakte, ki jih izbereš za deljenje.",
+    scan_intro:
+      "Ko nekdo skenira ReachMe, takoj vidi zaupanja vredne kontakte, ki jih izbereš za deljenje.",
     scan_card_title: "Skeniraj ReachMe",
     scan_card_text: "Skeniraj QR na svojem ReachMe izdelku.",
     profile_card_title: "Odpri profil",
@@ -13,41 +37,30 @@ const translations = {
     benefit3: "Takojšnja povezava",
 
     profile_setup_title: "Ustvari svoj profil",
-    profile_setup_intro: "Ustvari profile, dodaj zaupanja vredne kontakte in izberi, kateri profil je aktiven na tvojem ReachMe izdelku.",
+    profile_setup_intro:
+      "Ustvari profile, dodaj zaupanja vredne kontakte in izberi, kateri profil je aktiven na tvojem ReachMe izdelku.",
     create_profile_title: "Ustvari profil",
-    create_profile_text: "Ustvari enega ali več profilov za različne situacije.",
+    create_profile_text:
+      "Ustvari enega ali več profilov za različne situacije.",
     add_contacts_title: "Dodaj kontakte",
-    add_contacts_text: "Izberi, katere zaupanja vredne kontakte lahko ljudje pokličejo ali jim pošljejo sporočilo.",
+    add_contacts_text:
+      "Izberi, katere zaupanja vredne kontakte lahko ljudje pokličejo ali jim pošljejo sporočilo.",
     select_profile_title: "Izberi aktiven profil",
-    select_profile_text: "Izberi profil, ki je aktiven na tvojem ReachMe izdelku.",
+    select_profile_text:
+      "Izberi profil, ki je aktiven na tvojem ReachMe izdelku.",
     setup_benefit1: "Več profilov",
     setup_benefit2: "Posodobi kadarkoli",
     setup_benefit3: "Ti imaš nadzor",
 
-    hero_eyebrow: "Predstavljamo ReachMe",
-    hero_title: "Ostanite povezani kjerkoli.",
-    hero_text: "Kaj storiš, ko ti na festivalu, potovanju ali sredi mesta izpraznijo baterijo ali ukradejo telefon? ReachMe je fizični profil s stiki v sili, ki ga lahko kdorkoli skenira in ti pomaga nazaj do tvojih ljudi. Brez aplikacije.",
-    hero_cta: "Pridruži se waitlisti",
-    hero_secondary: "Poglej produkte",
-    hero_placeholder_title: "Glavna slika produkta",
-    hero_placeholder_text: "Tukaj pride ReachMe Clip render ali fotografija.",
-    hero_placeholder_note: "Zamenjaj placeholder s svojo sliko.",
-    not_tracker_title: "Telefon je prazen. Ali pa ukraden. Kako kontaktiraš svoje ljudi?",
-    not_tracker_text: "ReachMe je tvoj fizični varnostni profil. Ko tvoja tehnologija odpove, lahko kdorkoli skenira tvoj ReachMe obesek ali zapestnico in te poveže z nujnimi kontakti — brez aplikacije.",
-    step1_title: "Izguba povezave",
-    step1_text: "Telefon se ugasne ali izgine. Nenadoma ne veš na pamet nobene telefonske številke več. Si brez stika s svetom.",
-    step2_title: "Takojšnja pomoč",
-    step2_text: "Prosiš mimoidočega ali osebje na lokaciji, da skenira tvoj ReachMe QR. Brez prenosa aplikacij se odpre tvoj vnaprej pripravljen profil.",
-    step3_title: "Direktna linija",
-    step3_text: "Oseba lahko z enim klikom pokliče ali pošlje SMS tvojemu izbranemu stiku v sili (prijatelju na lokaciji, staršem, partnerju).",
     products_title: "ReachMe produkti",
-    products_text: "Izberi obliko, ki najbolje ustreza tvojemu načinu uporabe.",
-    clip_text: "Za potovanja in avanture. Pripni ga na pas, nahrbtnik ali skriti žep. Tvoj offline backup, ko raziskuješ nova mesta ali tvejaš krajo telefona.",
-    clip_placeholder: "Placeholder za Clip sliko",
-    keychain_text: "Za vsakdanjo varnost. Vedno na tvojih ključih. Če se kadarkoli znajdeš v nujni situaciji brez delujočega telefona, imaš stike vedno pri sebi.",
-    keychain_placeholder: "Placeholder za Keychain sliko",
-    band_text: "Za festivale in koncerte. Nosi ga na zapestju. Tvoja varnostna mreža v množici, ko omrežje pade ali baterija ne zdrži do konca večera.",
-    band_placeholder: "Placeholder za Band sliko",
+    products_text:
+      "Izberi obliko, ki najbolje ustreza tvojemu načinu uporabe.",
+    clip_text:
+      "Za potovanja in avanture. Pripni ga na pas, nahrbtnik ali skriti žep. Tvoj offline backup, ko raziskuješ nova mesta ali tvegaš krajo telefona.",
+    keychain_text:
+      "Za vsakdanjo varnost. Vedno na tvojih ključih. Če se kadarkoli znajdeš v nujni situaciji brez delujočega telefona, imaš stike vedno pri sebi.",
+    band_text:
+      "Za festivale in koncerte. Nosi ga na zapestju. Tvoja varnostna mreža v množici, ko omrežje pade ali baterija ne zdrži do konca večera.",
 
     waitlist_title: "Pridruži se ReachMe waitlisti",
     waitlist_intro:
@@ -67,16 +80,44 @@ const translations = {
     use_other: "Drugo",
     form_product_label: "Kateri produkt te najbolj zanima?",
     product_both: "Vsi",
-    form_attachment_label: "V kateri situaciji bi ti ReachMe najbolj prinesel mirno kri?",
+    form_attachment_label:
+      "V kateri situaciji bi ti ReachMe najbolj prinesel mirno kri?",
     form_attachment_placeholder:
       "Ko grem na glasbeni festival / Ko potujem v tujino / Za varnost mojih otrok v gneči / Ko sem zunaj na teku ali kolesu brez telefona.",
     waitlist_button: "Pridruži se waitlisti",
-    waitlist_note: "Zgodnji člani bodo pomagali oblikovati prihodnost ReachMe.",
+    waitlist_note:
+      "Zgodnji člani bodo pomagali oblikovati prihodnost ReachMe.",
+    render_disclaimer:
+      "ReachMe je trenutno v razvoju. Prikazane slike so konceptni renderji in se lahko pred lansiranjem spremenijo.",
   },
 
   en: {
+    hero_eyebrow: "Introducing ReachMe",
+    hero_title: "Stay connected anywhere.",
+    hero_text:
+      "ReachMe is a physical profile with trusted contacts that anyone can open by scanning a QR code. It works without an app or battery — when you do not have a phone, it is dead, lost, or stolen.",
+    hero_cta: "Join waitlist",
+    hero_secondary: "Explore products",
+
+    comparison_title:
+      "AirTag helps locate. ReachMe helps reconnect.",
+    comparison_intro:
+      "ReachMe does not replace an AirTag or smartwatch. It is an additional option when location alone is not enough or a device is unavailable.",
+    airtag_title: "Helps locate an item",
+    airtag_text:
+      "It helps the owner find the item it is attached to and view its approximate location.",
+    smartwatch_kicker: "Smartwatch",
+    smartwatch_title: "Enables communication",
+    smartwatch_text:
+      "It enables calls and may help with location, but it requires a charged battery, connectivity, and a working device.",
+    reachme_badge: "An additional safety layer",
+    reachme_compare_title: "Helps people reconnect",
+    reachme_compare_text:
+      "A person who finds someone scans the QR and contacts their trusted people. ReachMe does not need an app, battery, or tracking.",
+
     scan_title: "How ReachMe Works",
-    scan_intro: "When someone scans ReachMe, they instantly see the trusted contacts you choose to share.",
+    scan_intro:
+      "When someone scans ReachMe, they instantly see the trusted contacts you choose to share.",
     scan_card_title: "Scan ReachMe",
     scan_card_text: "Scan the QR on your ReachMe product.",
     profile_card_title: "Open Profile",
@@ -87,43 +128,30 @@ const translations = {
     benefit2: "You're in control",
     benefit3: "Connect instantly",
 
-    hero_eyebrow: "Introducing ReachMe",
-    hero_title: "Stay connected anywhere.",
-    hero_text: "What do you do when your battery dies or your phone gets stolen at a festival, during travel, or in the middle of the city? ReachMe is a physical emergency contact profile that anyone can scan to help you get back to your people. No app required.",
-    hero_cta: "Join waitlist",
-    hero_secondary: "Explore products",
-    hero_placeholder_title: "Main product image",
-    hero_placeholder_text: "ReachMe Clip render or photo goes here.",
-    hero_placeholder_note: "Replace this placeholder with your own image.",
-    not_tracker_title: "Your phone is dead. Or stolen. How do you reach your people?",
-    not_tracker_text: "What do you do when your battery dies or your phone gets stolen at a festival, during travel, or in the middle of the city? ReachMe is a physical emergency contact profile that anyone can scan to help you get back to your people. No app required.",
-    step1_title: "Lost Connection",
-    step1_text: "Your phone dies or disappears. Suddenly, you don't know a single phone number by heart. You are completely disconnected from the world.",
-    step2_title: "Instant Help",
-    step2_text: "Simply ask a bystander or staff member to scan your ReachMe QR. Without downloading any apps, your pre-configured profile opens instantly.",
-    step3_title: "Direct Line",
-    step3_text:
-      "With just one click, they can call or text your chosen emergency contact—whether it's a friend at the venue, a parent, or your partner.",
-    products_title: "ReachMe products",
-    products_text: "Choose the format that best fits your needs.",
-    clip_text: "For travel and adventures. Clip it to your belt, backpack, or a hidden pocket. Your offline backup when exploring new cities or facing the risk of phone theft.",
-    clip_placeholder: "Clip image placeholder",
-    keychain_text: "For everyday safety. Always on your keys. If you ever find yourself in an emergency without a working phone, your contacts are always right by your side.",
-    keychain_placeholder: "Keychain image placeholder",
-    band_text: "For festivals and concerts. Wear it on your wrist. Your safety net in the crowd when the network drops or your battery doesn't last until the end of the night.",
-    band_placeholder: "Band image placeholder",
-
     profile_setup_title: "Create Your Profile",
-    profile_setup_intro: "Create profiles, add trusted contacts, and choose which profile is active on your ReachMe product.",
+    profile_setup_intro:
+      "Create profiles, add trusted contacts, and choose which profile is active on your ReachMe product.",
     create_profile_title: "Create Profile",
-    create_profile_text: "Create one or more profiles for different situations.",
+    create_profile_text:
+      "Create one or more profiles for different situations.",
     add_contacts_title: "Add Trusted Contacts",
-    add_contacts_text: "Choose which trusted contacts people can call or message.",
+    add_contacts_text:
+      "Choose which trusted contacts people can call or message.",
     select_profile_title: "Select Active Profile",
-    select_profile_text: "Choose which profile is active on your ReachMe product.",
+    select_profile_text:
+      "Choose which profile is active on your ReachMe product.",
     setup_benefit1: "Multiple profiles",
     setup_benefit2: "Update anytime",
     setup_benefit3: "You're in control",
+
+    products_title: "ReachMe products",
+    products_text: "Choose the format that best fits your needs.",
+    clip_text:
+      "For travel and adventures. Clip it to your belt, backpack, or a hidden pocket. Your offline backup when exploring new cities or facing the risk of phone theft.",
+    keychain_text:
+      "For everyday safety. Always on your keys. If you ever find yourself in an emergency without a working phone, your contacts are always right by your side.",
+    band_text:
+      "For festivals and concerts. Wear it on your wrist. Your safety net in the crowd when the network drops or your battery does not last until the end of the night.",
 
     waitlist_title: "Join the ReachMe Waitlist",
     waitlist_intro:
@@ -143,11 +171,15 @@ const translations = {
     use_other: "Other",
     form_product_label: "Which product interests you most?",
     product_both: "All",
-    form_attachment_label: "In which situation would ReachMe bring you the most peace of mind?",
+    form_attachment_label:
+      "In which situation would ReachMe bring you the most peace of mind?",
     form_attachment_placeholder:
       "Traveling abroad / Keeping my kids safe in crowded places / Going for a run or bike ride without my phone",
     waitlist_button: "Join Waitlist",
-    waitlist_note: "Early members will help shape the future of ReachMe.",
+    waitlist_note:
+      "Early members will help shape the future of ReachMe.",
+    render_disclaimer:
+      "ReachMe is currently in development. Product images are concept renders and may evolve before launch.",
   },
 };
 
@@ -157,28 +189,24 @@ function setLanguage(lang) {
 
   document.querySelectorAll("[data-i18n]").forEach((element) => {
     const key = element.getAttribute("data-i18n");
-    if (translations[lang] && translations[lang][key]) {
-      element.textContent = translations[lang][key];
+    const value = translations[lang]?.[key];
+
+    if (value) {
+      element.textContent = value;
     }
   });
 
   document.querySelectorAll("[data-i18n-placeholder]").forEach((element) => {
     const key = element.getAttribute("data-i18n-placeholder");
-    if (translations[lang] && translations[lang][key]) {
-      element.setAttribute("placeholder", translations[lang][key]);
+    const value = translations[lang]?.[key];
+
+    if (value) {
+      element.setAttribute("placeholder", value);
     }
   });
 
-  const disclaimer = document.getElementById("render-disclaimer");
-  if (disclaimer) {
-    disclaimer.textContent =
-      lang === "en"
-        ? "ReachMe is currently in development. Product images are concept renders and may evolve before launch."
-        : "ReachMe je trenutno v razvoju. Prikazane slike so konceptni renderji in se lahko pred lansiranjem spremenijo.";
-  }
-
-  document.getElementById("btn-sl").classList.toggle("active", lang === "sl");
-  document.getElementById("btn-en").classList.toggle("active", lang === "en");
+  document.getElementById("btn-sl")?.classList.toggle("active", lang === "sl");
+  document.getElementById("btn-en")?.classList.toggle("active", lang === "en");
 }
 
 const savedLanguage = localStorage.getItem("relink_lang") || "sl";
