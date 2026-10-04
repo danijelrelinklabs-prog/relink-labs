@@ -4,330 +4,571 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta
+      id="meta-description"
       name="description"
-      content="ReachMe helps people connect with your trusted contacts through a simple QR code. Ideal for travel, family members, bags, keys and everyday carry."
+      content="ReachMe omogoči varen način za stik z ljudmi, ki jim zaupaš, ko telefona ne moreš uporabiti. Brez aplikacije, baterije ali sledenja."
     />
-    <title>ReachMe — Stay Connected When It Matters Most</title>
+    <meta name="theme-color" content="#070707" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://relinklabs.io/" />
+    <meta
+      id="og-title"
+      property="og:title"
+      content="ReachMe — en sken do pravega kontakta"
+    />
+    <meta
+      id="og-description"
+      property="og:description"
+      content="Tvoji zaupanja vredni kontakti, dostopni takrat, ko jih potrebuješ."
+    />
+    <meta
+      property="og:image"
+      content="https://relinklabs.io/Images/reachme-keychain.webp"
+    />
+    <meta name="twitter:card" content="summary_large_image" />
+    <link rel="canonical" href="https://relinklabs.io/" />
+    <title>ReachMe — en sken do pravega kontakta</title>
     <link rel="icon" type="image/png" href="Images/favicon_v2.png" />
     <link rel="apple-touch-icon" href="Images/favicon_v2.png" />
     <link rel="stylesheet" href="style.css" />
     <script src="script.js" defer></script>
   </head>
   <body>
+    <a class="skip-link" href="#main" data-i18n="skip_link"
+      >Preskoči na vsebino</a
+    >
+
     <div class="wrap">
-      <nav class="nav">
-        <div class="brand">
-          <img src="Images/logo.webp" alt="ReLink Labs logo" />
+      <nav class="nav" aria-label="Glavna navigacija">
+        <a class="brand" href="#top" aria-label="ReLink Labs — domov">
+          <img src="Images/logo.webp" alt="" />
           <span>ReLink Labs</span>
+        </a>
+
+        <div class="nav-links">
+          <a href="#how-it-works" data-i18n="nav_how">Kako deluje</a>
+          <a href="#keychain" data-i18n="nav_keychain">Keychain</a>
+          <a href="#privacy" data-i18n="nav_privacy">Zasebnost</a>
+          <a href="#faq">FAQ</a>
         </div>
 
-        <div class="lang">
-          <button id="btn-sl" class="active" onclick="setLanguage('sl')">
-            SL
-          </button>
-          <span style="color: #444">|</span>
-          <button id="btn-en" onclick="setLanguage('en')">EN</button>
+        <div class="nav-actions">
+          <a
+            class="activation-link"
+            href="https://app.relinklabs.io"
+            data-i18n="nav_activate"
+            >Aktiviraj</a
+          >
+          <div class="lang" aria-label="Izbira jezika">
+            <button
+              id="btn-sl"
+              class="active"
+              type="button"
+              onclick="setLanguage('sl')"
+            >
+              SL
+            </button>
+            <span aria-hidden="true">|</span>
+            <button id="btn-en" type="button" onclick="setLanguage('en')">
+              EN
+            </button>
+          </div>
         </div>
       </nav>
 
-      <section class="hero">
-        <div>
-          <span class="eyebrow" data-i18n="hero_eyebrow"
-            >Predstavljamo ReachMe</span
-          >
-
-          <h1 data-i18n="hero_title">Ostanite povezani kjerkoli.</h1>
-
-          <p data-i18n="hero_text">
-            ReachMe je fizični profil z zaupanja vrednimi kontakti, ki ga lahko kdorkoli odpre s skeniranjem QR kode. Deluje brez aplikacije in brez baterije — ko nimaš telefona, je prazen, izgubljen ali ukraden.
-          </p>
-
-          <a class="button" href="#waitlist" data-i18n="hero_cta"
-            >Pridruži se waitlisti</a
-          >
-          <a
-            class="button secondary"
-            href="#products"
-            data-i18n="hero_secondary"
-            >Poglej produkte</a
-          >
-        </div>
-
-        <div class="hero-image">
-          <img src="Images/reachme-wearing-clip.webp" alt="ReachMe Keychain" />
-        </div>
-      </section>
-
-      <section class="section comparison-section" id="why-reachme">
-        <div class="how-header">
-          <h2 data-i18n="comparison_title">
-            AirTag pomaga najti. ReachMe pomaga vzpostaviti stik.
-          </h2>
-          <p data-i18n="comparison_intro">
-            ReachMe ne nadomešča AirTaga ali pametne ure. Je dodatna možnost, ko lokacija sama ni dovolj ali naprava ne deluje.
-          </p>
-        </div>
-
-        <div class="comparison-grid">
-          <article class="comparison-card">
-            <span class="comparison-kicker">AirTag</span>
-            <h3 data-i18n="airtag_title">Pomaga poiskati predmet</h3>
-            <p data-i18n="airtag_text">
-              Lastniku pomaga poiskati predmet, na katerega je pritrjen, in prikazati njegovo približno lokacijo.
+      <main id="main">
+        <section class="hero" id="top">
+          <div>
+            <span class="eyebrow" data-i18n="hero_eyebrow"
+              >Predstavljamo ReachMe</span
+            >
+            <h1 data-i18n="hero_title">
+              Pravi kontakti. Takrat, ko jih potrebuješ.
+            </h1>
+            <p data-i18n="hero_text">
+              Če ne moreš uporabiti telefona, lahko ena QR-koda pomaga drugi
+              osebi vzpostaviti stik z ljudmi, ki jim zaupaš. Brez aplikacije,
+              baterije ali sledenja.
             </p>
-          </article>
 
-          <article class="comparison-card">
-            <span class="comparison-kicker" data-i18n="smartwatch_kicker">Pametna ura</span>
-            <h3 data-i18n="smartwatch_title">Omogoča komunikacijo</h3>
-            <p data-i18n="smartwatch_text">
-              Omogoča klice in lahko pomaga z lokacijo, vendar potrebuje napolnjeno baterijo, povezavo in delujočo napravo.
+            <div class="hero-actions">
+              <a class="button" href="#waitlist" data-i18n="hero_cta"
+                >Pridruži se zgodnjemu dostopu</a
+              >
+              <a
+                class="button secondary"
+                href="#keychain"
+                data-i18n="hero_secondary"
+                >Spoznaj Keychain</a
+              >
+            </div>
+
+            <p class="signature-line">One scan. The right connection.</p>
+          </div>
+
+          <div class="hero-image">
+            <img
+              src="Images/reachme-wearing-clip.webp"
+              alt="Črn ReachMe obesek, pripet na oblačilo"
+              data-i18n-alt="hero_image_alt"
+            />
+          </div>
+        </section>
+
+        <section class="section comparison-section" id="why-reachme">
+          <div class="how-header">
+            <span class="section-label" data-i18n="why_label"
+              >Zakaj ReachMe</span
+            >
+            <h2 data-i18n="comparison_title">
+              Lokacija pove kje. ReachMe pomaga doseči koga.
+            </h2>
+            <p data-i18n="comparison_intro">
+              ReachMe ni sledilnik in ne nadomešča telefona ali pametne ure. Je
+              preprosta dodatna možnost za stik, ko tehnologija, ki jo običajno
+              uporabljaš, ni na voljo.
             </p>
-          </article>
+          </div>
 
-          <article class="comparison-card comparison-card-featured">
-            <span class="comparison-badge" data-i18n="reachme_badge">Dodatna varnostna plast</span>
-            <span class="comparison-kicker">ReachMe</span>
-            <h3 data-i18n="reachme_compare_title">Pomaga vzpostaviti stik</h3>
-            <p data-i18n="reachme_compare_text">
-              Oseba, ki nekoga najde, skenira QR in stopi v stik z njegovimi zaupanja vrednimi osebami. ReachMe ne potrebuje aplikacije, baterije ali sledenja.
+          <div class="comparison-grid">
+            <article class="comparison-card">
+              <span class="comparison-kicker">AirTag</span>
+              <h3 data-i18n="airtag_title">Pomaga poiskati predmet</h3>
+              <p data-i18n="airtag_text">
+                Prikaže približno lokacijo predmeta, na katerega je pritrjen.
+              </p>
+            </article>
+
+            <article class="comparison-card">
+              <span class="comparison-kicker" data-i18n="smartwatch_kicker"
+                >Pametna ura</span
+              >
+              <h3 data-i18n="smartwatch_title">Omogoča aktivno komunikacijo</h3>
+              <p data-i18n="smartwatch_text">
+                Za delovanje potrebuje napajanje, povezavo in dostop do naprave.
+              </p>
+            </article>
+
+            <article class="comparison-card comparison-card-featured">
+              <span class="comparison-badge" data-i18n="reachme_badge"
+                >Dodatna možnost za stik</span
+              >
+              <span class="comparison-kicker">ReachMe</span>
+              <h3 data-i18n="reachme_compare_title">
+                Pomaga doseči zaupanja vredno osebo
+              </h3>
+              <p data-i18n="reachme_compare_text">
+                Sken odpre varen profil z načinom za stik, ki ga določiš sam.
+                Brez aplikacije, baterije in spremljanja lokacije.
+              </p>
+            </article>
+          </div>
+        </section>
+
+        <section class="section how-visual" id="how-it-works">
+          <div class="how-header">
+            <span class="section-label" data-i18n="how_label"
+              >Trije preprosti koraki</span
+            >
+            <h2 data-i18n="scan_title">Kako deluje ReachMe</h2>
+            <p data-i18n="scan_intro">
+              Ob skenu se odpre varen ReachMe profil. Ti odločaš, kateri način
+              stika je na voljo.
             </p>
-          </article>
-        </div>
-      </section>
+          </div>
 
-      <section class="section how-visual" id="how-it-works">
-        <div class="how-header">
-        <h2 data-i18n="scan_title">Kako deluje ReachMe</h2>
-        <p data-i18n="scan_intro">Ko nekdo skenira ReachMe, takoj vidi zaupanja vredne kontakte, ki jih izbereš za deljenje.</p>
-        </div>
-        
-        <div class="how-cards">
-        <div class="how-card">
-        <img src="Images/reachme-scan.webp" alt="Scan ReachMe">
-        <h3 data-i18n="scan_card_title">Skeniraj ReachMe</h3>
-        <p data-i18n="scan_card_text">Skeniraj QR na svojem ReachMe izdelku.</p>
-        </div>
-        
-        <div class="how-card">
-        <img src="Images/reachme-profile.webp" alt="ReachMe profile mockup">
-        <h3 data-i18n="profile_card_title">Odpri profil</h3>
-        <p data-i18n="profile_card_text">Po skenu se odpre izbran ReachMe profil.</p>
-        </div>
-        
-        <div class="how-card">
-        <img src="Images/reachme-contacts.webp" alt="ReachMe contact mockup">
-        <h3 data-i18n="contact_card_title">Kontaktiraj osebo</h3>
-        <p data-i18n="contact_card_text">Pokliči ali pošlji sporočilo izbranemu kontaktu.</p>
-        </div>
-        </div>
-        
-        <div class="how-benefits">
-        <span data-i18n="benefit1">Brez aplikacije</span><span>•</span><span data-i18n="benefit2">Ti imaš nadzor</span><span>•</span><span data-i18n="benefit3">Takojšnja povezava</span>
-        </div>
+          <div class="how-cards">
+            <article class="how-card">
+              <img
+                src="Images/reachme-scan.webp"
+                alt="Skeniranje ReachMe QR-kode"
+                data-i18n-alt="scan_image_alt"
+              />
+              <span class="step-number">01</span>
+              <h3 data-i18n="scan_card_title">Skeniraj ReachMe</h3>
+              <p data-i18n="scan_card_text">
+                Deluje z običajno kamero telefona. Dodatna aplikacija ni
+                potrebna.
+              </p>
+            </article>
+
+            <article class="how-card">
+              <img
+                src="Images/reachme-profile.webp"
+                alt="Varen ReachMe profil"
+                data-i18n-alt="profile_image_alt"
+              />
+              <span class="step-number">02</span>
+              <h3 data-i18n="profile_card_title">Odpri varen profil</h3>
+              <p data-i18n="profile_card_text">
+                Prikažejo se samo podatki in možnosti, ki jih lastnik izbere za
+                deljenje.
+              </p>
+            </article>
+
+            <article class="how-card">
+              <img
+                src="Images/reachme-contacts.webp"
+                alt="Vzpostavljanje stika z izbrano osebo"
+                data-i18n-alt="contact_image_alt"
+              />
+              <span class="step-number">03</span>
+              <h3 data-i18n="contact_card_title">Vzpostavi stik</h3>
+              <p data-i18n="contact_card_text">
+                Uporabi omogočen varen način, da dosežeš izbrano zaupanja vredno
+                osebo.
+              </p>
+            </article>
+          </div>
+
+          <div class="how-benefits" aria-label="Glavne prednosti">
+            <span data-i18n="benefit1">Brez aplikacije</span
+            ><span aria-hidden="true">•</span>
+            <span data-i18n="benefit2">Brez baterije</span
+            ><span aria-hidden="true">•</span>
+            <span data-i18n="benefit3">Brez sledenja</span>
+          </div>
         </section>
 
         <section class="section profile-setup" id="profile-setup">
           <div class="how-header">
-            <h2 data-i18n="profile_setup_title">Ustvari svoj profil</h2>
-            <p data-i18n="profile_setup_intro">Ustvari profile, dodaj zaupanja vredne kontakte in izberi, kateri profil je aktiven na tvojem ReachMe izdelku.</p>
+            <span class="section-label" data-i18n="control_label"
+              >Ti imaš nadzor</span
+            >
+            <h2 data-i18n="profile_setup_title">Nastavi ga po svoje</h2>
+            <p data-i18n="profile_setup_intro">
+              Ustvari profil, dodaj ljudi, ki jim zaupaš, in kadarkoli spremeni,
+              kako lahko nekdo vzpostavi stik.
+            </p>
           </div>
-        
+
           <div class="how-cards">
-            <div class="how-card">
-              <img src="Images/create-profile.webp" alt="Create Profile">
+            <article class="how-card">
+              <img
+                src="Images/create-profile.webp"
+                alt="Ustvarjanje ReachMe profila"
+                data-i18n-alt="create_profile_image_alt"
+              />
               <h3 data-i18n="create_profile_title">Ustvari profil</h3>
-              <p data-i18n="create_profile_text">Ustvari enega ali več profilov za različne situacije.</p>
-            </div>
-        
-            <div class="how-card">
-              <img src="Images/add-contacts.webp" alt="Add Trusted Contacts">
-              <h3 data-i18n="add_contacts_title">Dodaj kontakte</h3>
-              <p data-i18n="add_contacts_text">Izberi, katere zaupanja vredne kontakte lahko ljudje pokličejo ali jim pošljejo sporočilo.</p>
-            </div>
-        
-            <div class="how-card">
-              <img src="Images/select-profile.png" alt="Select Active Profile">
-              <h3 data-i18n="select_profile_title">Izberi aktiven profil</h3>
-              <p data-i18n="select_profile_text">Izberi profil, ki je aktiven na tvojem ReachMe izdelku.</p>
-            </div>
-          </div>
-        
-          <div class="how-benefits">
-            <span data-i18n="setup_benefit1">Več profilov</span><span>•</span><span data-i18n="setup_benefit2">Posodobi kadarkoli</span><span>•</span><span data-i18n="setup_benefit3">Ti imaš nadzor</span>
+              <p data-i18n="create_profile_text">
+                Uporabi vzdevek in dodaj samo informacije, ki so za stik res
+                potrebne.
+              </p>
+            </article>
+
+            <article class="how-card">
+              <img
+                src="Images/add-contacts.webp"
+                alt="Dodajanje zaupanja vrednih kontaktov"
+                data-i18n-alt="add_contacts_image_alt"
+              />
+              <h3 data-i18n="add_contacts_title">
+                Dodaj zaupanja vredne osebe
+              </h3>
+              <p data-i18n="add_contacts_text">
+                Vsaka oseba mora potrditi, da želi biti dosegljiva prek tvojega
+                profila.
+              </p>
+            </article>
+
+            <article class="how-card">
+              <img
+                src="Images/select-profile.png"
+                alt="Izbira aktivnega ReachMe profila"
+                data-i18n-alt="select_profile_image_alt"
+              />
+              <h3 data-i18n="select_profile_title">Izberi, kaj je vidno</h3>
+              <p data-i18n="select_profile_text">
+                Način stika in prikazane informacije lahko pozneje kadarkoli
+                spremeniš.
+              </p>
+            </article>
           </div>
         </section>
 
-      <section class="section" id="products">
-        <h2 data-i18n="products_title">ReachMe produkti</h2>
+        <section class="section" id="keychain">
+          <div class="product-feature">
+            <div class="product-copy">
+              <span class="section-label">ReachMe Keychain</span>
+              <h2 data-i18n="product_title">Izdelan za vsak dan.</h2>
+              <p data-i18n="product_intro">
+                Trpežen obesek iz nerjavnega jekla za ključe, nahrbtnik ali
+                torbo. Trenutno testiramo končni črni PVD in brušeni jekleni
+                izvedbi.
+              </p>
 
-        <p data-i18n="products_text">Izberi obliko, ki najbolje ustreza tvojemu načinu uporabe.</p>
+              <ul class="feature-list">
+                <li>
+                  <span class="feature-dot"></span
+                  ><span data-i18n="feature_material"
+                    >Nerjavno jeklo 304, debeline 2 mm</span
+                  >
+                </li>
+                <li>
+                  <span class="feature-dot"></span
+                  ><span data-i18n="feature_finish"
+                    >Črn PVD ali naravno brušeno jeklo</span
+                  >
+                </li>
+                <li>
+                  <span class="feature-dot"></span
+                  ><span data-i18n="feature_qr"
+                    >Trajno lasersko označena QR-koda</span
+                  >
+                </li>
+                <li>
+                  <span class="feature-dot"></span
+                  ><span data-i18n="feature_power"
+                    >Brez polnjenja, baterije ali elektronike</span
+                  >
+                </li>
+              </ul>
 
-        <div class="products">
-          <div class="product">
+              <a class="button" href="#waitlist" data-i18n="product_cta"
+                >Obvesti me ob lansiranju</a
+              >
+            </div>
+
+            <div class="product-visual">
+              <img
+                src="Images/reachme-keychain.webp"
+                alt="Črn ReachMe Keychain iz nerjavnega jekla"
+                data-i18n-alt="product_image_alt"
+              />
+              <div class="prototype-note" data-i18n="prototype_note">
+                Končni prototip v testiranju
+              </div>
+            </div>
+          </div>
+
+          <div class="future-products">
             <div>
+              <span class="section-label" data-i18n="future_label"
+                >V raziskovanju</span
+              >
               <h3>ReachMe Clip</h3>
-              <p data-i18n="clip_text">
-                Za potovanja in avanture. Pripni ga na pas, nahrbtnik ali skriti žep. Tvoj offline backup, ko raziskuješ nova mesta ali tvejaš krajo telefona.
-              </p>
             </div>
-            <img
-              class="product-image"
-              src="Images/reachme-clip.webp"
-              alt="ReachMe Clip render"
-            />
-          </div>
-
-          <div class="product">
             <div>
-              <h3>ReachMe Keychain</h3>
-              <p data-i18n="keychain_text">
-                Za vsakdanjo varnost. Vedno na tvojih ključih. Če se kadarkoli znajdeš v nujni situaciji brez delujočega telefona, imaš stike vedno pri sebi.
-              </p>
-            </div>
-            <img
-              class="product-image"
-              src="Images/reachme-keychain.webp"
-              alt="ReachMe Keychain render"
-            />
-          </div>
-
-          <div class="product">
-            <div>
+              <span class="section-label" data-i18n="future_label_2"
+                >V raziskovanju</span
+              >
               <h3>ReachMe Band</h3>
-              <p data-i18n="band_text">
-                Za festivale in koncerte. Nosi ga na zapestju. Tvoja varnostna mreža v množici, ko omrežje pade ali baterija ne zdrži do konca večera.
-              </p>
             </div>
-            <!-- <div class="coming-soon-card" data-i18n="band_coming_soon">
-              Coming Soon
-            </div> -->
-            <img
-              class="product-image"
-              src="Images/reachme-band.webp"
-              alt="ReachMe Band Coming Soon render"
-            />
           </div>
-        </div>
-      </section>
+        </section>
 
-      <section class="final" id="waitlist">
-        <h2 data-i18n="waitlist_title">Pridruži se ReachMe waitlisti</h2>
-
-        <p data-i18n="waitlist_intro">
-          Pomagaj oblikovati ReachMe in bodi med prvimi, ki izvejo za
-          lansiranje.
-        </p>
-
-        <form
-          action="https://formspree.io/f/xrevplzd"
-          method="POST"
-          class="waitlist-form"
-        >
-          <div class="form-group">
-            <label for="email" data-i18n="form_email_label"
-              >Email naslov *</label
+        <section class="section privacy-section" id="privacy">
+          <div class="privacy-copy">
+            <span class="section-label" data-i18n="privacy_label"
+              >Zasnovan z mislijo na zasebnost</span
             >
-            <input
-              type="email"
-              id="email"
-              name="email"
-              data-i18n-placeholder="form_email_placeholder"
-              placeholder="tvoj@email.com"
-              required
-            />
+            <h2 data-i18n="privacy_title">Povezava brez sledenja.</h2>
+            <p data-i18n="privacy_intro">
+              ReachMe ne prikazuje lokacije in ne potrebuje aplikacije. Profil
+              vsebuje samo informacije, ki jih izbereš za namen vzpostavitve
+              stika.
+            </p>
           </div>
 
-          <div class="form-group">
-            <label for="use_case" data-i18n="form_usecase_label"
-              >Za kaj bi primarno uporabljal/a ReachMe?</label
+          <div class="privacy-grid">
+            <article>
+              <span>01</span>
+              <h3 data-i18n="privacy_min_title">Najmanjši obseg podatkov</h3>
+              <p data-i18n="privacy_min_text">
+                Vzdevek, izbrani kontakti in po želji kratko sporočilo za pomoč.
+              </p>
+            </article>
+            <article>
+              <span>02</span>
+              <h3 data-i18n="privacy_choice_title">Ti izbiraš način stika</h3>
+              <p data-i18n="privacy_choice_text">
+                Zasebni način je privzet; neposredni podatki se pokažejo samo po
+                izrecni izbiri.
+              </p>
+            </article>
+            <article>
+              <span>03</span>
+              <h3 data-i18n="privacy_children_title">
+                Profili otrok pod nadzorom odraslega
+              </h3>
+              <p data-i18n="privacy_children_text">
+                Otroški profil ustvari in upravlja starš ali zakoniti skrbnik.
+              </p>
+            </article>
+          </div>
+        </section>
+
+        <section class="section faq-section" id="faq">
+          <div class="how-header">
+            <span class="section-label" data-i18n="faq_label"
+              >Pogosta vprašanja</span
             >
-            <select id="use_case" name="use_case" required>
-              <option value="" data-i18n="form_select_option">
-                Izberi možnost
-              </option>
-              <option value="Travel & luggage" data-i18n="use_travel">
-                Potovanja in prtljaga
-              </option>
-              <option value="Backpacks & bags" data-i18n="use_bags">
-                Backpacki in torbe
-              </option>
-              <option value="Children" data-i18n="use_children">Otroci</option>
-              <option value="Elderly family members" data-i18n="use_elderly">
-                Starejši družinski člani
-              </option>
-              <option value="Keys" data-i18n="use_keys">Ključi</option>
-              <option value="Pets" data-i18n="use_pets">
-                Hišni ljubljenčki
-              </option>
-              <option value="Events & festivals" data-i18n="use_events">
-                Dogodki in festivali
-              </option>
-              <option value="Other" data-i18n="use_other">Drugo</option>
-            </select>
+            <h2 data-i18n="faq_title">Dobro je vedeti.</h2>
           </div>
 
-          <div class="form-group">
-            <label for="product_interest" data-i18n="form_product_label"
-              >Kateri produkt te najbolj zanima?</label
-            >
-            <select id="product_interest" name="product_interest" required>
-              <option value="" data-i18n="form_select_option_2">
-                Izberi možnost
-              </option>
-              <option value="ReachMe Clip">ReachMe Clip</option>
-              <option value="ReachMe Keychain">ReachMe Keychain</option>
-              <option value="ReachMe Band">ReachMe Band</option>
-              <option value="All" data-i18n="product_both">Vsi</option>
-            </select>
+          <div class="faq-list">
+            <details>
+              <summary data-i18n="faq_app_q">
+                Ali mora oseba, ki skenira, namestiti aplikacijo?
+              </summary>
+              <p data-i18n="faq_app_a">
+                Ne. ReachMe se odpre v običajnem spletnem brskalniku telefona.
+              </p>
+            </details>
+            <details>
+              <summary data-i18n="faq_tracking_q">
+                Ali ReachMe spremlja mojo lokacijo?
+              </summary>
+              <p data-i18n="faq_tracking_a">
+                Ne. ReachMe nima GPS-a, baterije ali druge elektronike za
+                sledenje.
+              </p>
+            </details>
+            <details>
+              <summary data-i18n="faq_visible_q">
+                Kaj vidi oseba, ki skenira kodo?
+              </summary>
+              <p data-i18n="faq_visible_a">
+                Samo profil in možnosti za stik, ki jih določiš. Nastavitve
+                lahko pozneje spremeniš.
+              </p>
+            </details>
+            <details>
+              <summary data-i18n="faq_child_q">
+                Ali lahko ReachMe uporablja otrok?
+              </summary>
+              <p data-i18n="faq_child_a">
+                Da, vendar profil vedno ustvari in upravlja odrasli starš ali
+                zakoniti skrbnik.
+              </p>
+            </details>
+            <details>
+              <summary data-i18n="faq_emergency_q">
+                Ali ReachMe nadomešča številko 112 ali medicinski pripomoček?
+              </summary>
+              <p data-i18n="faq_emergency_a">
+                Ne. ReachMe je dodaten način za vzpostavitev stika in ni služba
+                za nujno pomoč, sledilnik ali medicinski pripomoček.
+              </p>
+            </details>
           </div>
+        </section>
 
-          <div class="form-group">
-            <label for="first_attachment" data-i18n="form_attachment_label"
-              >V kateri situaciji bi ti ReachMe najbolj prinesel mirno kri?</label
-            >
-            <textarea
-              id="first_attachment"
-              name="first_attachment"
-              rows="4"
-              data-i18n-placeholder="form_attachment_placeholder"
-              placeholder="Ko grem na glasbeni festival / Ko potujem v tujino / Za varnost mojih otrok v gneči / Ko sem zunaj na teku ali kolesu brez telefona."
-            ></textarea>
-          </div>
-
-          <input
-            type="hidden"
-            name="_subject"
-            value="New ReachMe waitlist signup"
-          />
-          <input type="hidden" name="source" value="relinklabs.io" />
-
-          <button
-            type="submit"
-            class="waitlist-button"
-            data-i18n="waitlist_button"
+        <section class="final" id="waitlist">
+          <span class="section-label" data-i18n="waitlist_label"
+            >Zgodnji dostop</span
           >
-            Pridruži se waitlisti
-          </button>
-
-          <p class="waitlist-note" data-i18n="waitlist_note">
-            Zgodnji člani bodo pomagali oblikovati prihodnost ReachMe.
+          <h2 data-i18n="waitlist_title">Bodi med prvimi.</h2>
+          <p data-i18n="waitlist_intro">
+            Povej nam, kje bi ti ReachMe najbolj koristil, in obvestili te bomo,
+            ko bo pripravljen.
           </p>
-        </form>
 
-        <p
-          id="render-disclaimer"
-          class="render-disclaimer"
-          data-i18n="render_disclaimer"
-        >
-          ReachMe je trenutno v razvoju. Prikazane slike so konceptni renderji
-          in se lahko pred lansiranjem spremenijo.
-        </p>
-      </section>
+          <form
+            action="https://formspree.io/f/xrevplzd"
+            method="POST"
+            class="waitlist-form"
+          >
+            <div class="form-group">
+              <label for="email" data-i18n="form_email_label"
+                >Email naslov *</label
+              >
+              <input
+                type="email"
+                id="email"
+                name="email"
+                autocomplete="email"
+                data-i18n-placeholder="form_email_placeholder"
+                placeholder="tvoj@email.com"
+                required
+              />
+            </div>
+
+            <div class="form-group">
+              <label for="use_case" data-i18n="form_usecase_label"
+                >Kje bi ti ReachMe najbolj koristil?</label
+              >
+              <select id="use_case" name="use_case" required>
+                <option value="" data-i18n="form_select_option">
+                  Izberi možnost
+                </option>
+                <option value="Everyday carry" data-i18n="use_everyday">
+                  Vsakdan in osebna varnost
+                </option>
+                <option value="Travel & luggage" data-i18n="use_travel">
+                  Potovanja in prtljaga
+                </option>
+                <option value="Backpacks & bags" data-i18n="use_bags">
+                  Nahrbtniki in torbe
+                </option>
+                <option value="Children" data-i18n="use_children">
+                  Otroci
+                </option>
+                <option value="Elderly family members" data-i18n="use_elderly">
+                  Starejši družinski člani
+                </option>
+                <option value="Events & festivals" data-i18n="use_events">
+                  Dogodki in festivali
+                </option>
+                <option value="Other" data-i18n="use_other">Drugo</option>
+              </select>
+            </div>
+
+            <div class="consent-row">
+              <input
+                type="checkbox"
+                id="waitlist-consent"
+                name="waitlist_consent"
+                value="yes"
+                required
+              />
+              <label for="waitlist-consent" data-i18n="consent_text"
+                >Strinjam se, da ReLink Labs uporabi moj email za obvestila o
+                razvoju in lansiranju ReachMe. Soglasje lahko kadarkoli
+                prekličem.</label
+              >
+            </div>
+
+            <input
+              type="hidden"
+              name="_subject"
+              value="New ReachMe waitlist signup"
+            />
+            <input type="hidden" name="source" value="relinklabs.io" />
+            <input type="hidden" name="form_version" value="2026-10-04" />
+
+            <button
+              type="submit"
+              class="waitlist-button"
+              data-i18n="waitlist_button"
+            >
+              Pridruži se zgodnjemu dostopu
+            </button>
+            <p class="waitlist-note" data-i18n="waitlist_privacy_note">
+              Podatke hranimo do lansiranja ali preklica soglasja. Obrazec
+              tehnično obdela Formspree; za izbris piši na hello@relinklabs.io.
+            </p>
+          </form>
+
+          <p class="render-disclaimer" data-i18n="render_disclaimer">
+            ReachMe je trenutno v razvoju in še ni na voljo za nakup. Prikazane
+            lifestyle slike so ilustrativne, končna izvedba pa se lahko po
+            testiranju še spremeni.
+          </p>
+        </section>
+      </main>
 
       <footer>
+        <div>
+          <strong>ReLink Labs</strong
+          ><span data-i18n="footer_status">Projekt v razvoju · Slovenija</span>
+        </div>
+        <div class="footer-links">
+          <a href="#privacy" data-i18n="footer_privacy">Zasebnost</a>
+          <a href="#faq">FAQ</a>
+          <a href="mailto:hello@relinklabs.io">hello@relinklabs.io</a>
+        </div>
         <span>© 2026 ReLink Labs</span>
-        <span>hello@relinklabs.io</span>
       </footer>
     </div>
   </body>
